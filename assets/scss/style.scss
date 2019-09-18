@@ -1,0 +1,209 @@
+/** arquivo importado do bootstrap*/
+@import "bootstrap/bootstrap";
+
+/** todo seu codigo vem aqui */
+
+.max-width{
+	max-width: 900px;
+}
+
+.bg-breadcrumb{
+	background-color: #e9ecef;
+}
+
+/*Variáveis*/
+	/*Tipografias*/
+	$p-font:"Roboto", sans-serif;
+	$s-font:"Open Sans", sans-serif;
+	
+	/*Cores*/
+		/*Escala de cinza*/
+		$color-text: $gray-900;
+		$color-title: $gray-800;
+		$color-sub-title: $gray-700;
+		$color-white: $white;
+		$color-description: $gray-600;
+		
+		/*Escala de verde*/
+		$m-green: #006832;
+		$l-green: #01cb62;
+		$d-green: #014c25;
+
+
+/*Botões*/
+	.btn-l-green{
+		background-color: $l-green;
+		color: $color-white;
+		font-family: $p-font;
+		font-size: 18px;
+		&:hover{background-color: $d-green;};
+	}
+
+/**/
+.title{
+	font-family: $p-font;
+	font-size: 28px;
+	color: $gray-800;
+	font-weight: bold;
+}
+
+.row-title{
+	background-color: $l-green;
+	height: 2px;
+	width: 100%;
+}
+
+.dropdown-mobile{
+	background-color: $l-green;
+}
+
+.estilo-listagem{
+	list-style-type:square;
+	color: $color-text;
+}
+
+@mixin text-flow{
+	font-family: $s-font;
+	font-size: 16px;
+	color: $color-text;
+	line-height: 2;
+} 
+
+.text-flow{
+	@include text-flow();
+}
+
+.sub-title{
+	@include text-flow();
+	color: $color-sub-title;
+}
+
+.footer{
+	background-color: $m-green;
+	@include text-flow();
+	color: $white;
+}
+.icon-footer{
+	fill: white;
+	width: 30px;
+}
+
+.sub-footer{
+	background-color: $d-green;
+	font-family: $s-font;
+	font-size: 14px;
+	color: $white;
+}
+
+/*Fale Conosco*/
+@mixin title-green{
+	font-family: $p-font;
+	font-size: 26px;
+	color: $l-green;
+	font-weight: bold;
+}
+
+.title-green{
+	@include title-green();
+}
+
+/*Notícias*/
+.border-noticia{
+	border-left: 10px solid $l-green;
+	border-bottom: 10px solid $l-green; 
+}
+
+.card-title-noticia{
+	color: $color-title;
+	font-family: $p-font;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1;
+
+	&:hover{
+	color: $l-green;
+	text-decoration: none;
+	}
+}
+
+.text-description{
+	@include text-flow();
+	font-size: 14px;
+}
+
+.page-link{
+	color: $l-green;
+	&:hover{color: $d-green;};
+}
+.active-green{
+	background-color: $l-green;
+	color: $color-white;
+}
+
+/*Visualizar Notícia*/
+.description-v-noticia{
+	font-family: $s-font;
+	font-size: 16px;
+	color: $gray-600;
+	line-height: 1.5;
+}
+
+.card-description-v-noticia{
+	font-family: $s-font;
+	font-size: 14px;
+	color: $gray-600;
+	line-height: 1.5;
+}
+a{&:hover{text-decoration: none;}}
+
+.title-card-noticia{@include title-green(); color: $color-title; &:hover{color: $l-green;}}
+
+.title-card-empresa{@include title-green(); color: $color-title; font-size: 20px; &:hover{color: $l-green;};}
+
+/*Visualizar Empresa*/
+.title-md-v-empresa{
+	font-family: $p-font;
+	color: $gray-800;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*Início*/
+.bene-title{
+	font-family: $p-font;
+	font-size: 28px;
+	color: white;	
+}
+
+.desc-bene{
+	font-family: 'Roboto', sans-serif; 
+	font-size: 14px; 
+	color: white;
+}
+
+.btn-home{
+	border-radius: 5px;
+	border: 1px solid $gray-800;
+	background-color: white;
+	font-weight: bold;
+	color: $l-green;
+	font-family: $p-font;
+	font-size: 18px;
+	&:hover{background-color: $l-green; color: white; border: 1px solid $l-green;};
+}
+
+.title-pesquisa{
+	font-family: $p-font;
+	font-size: 20px;
+	color: $gray-800;
+}
+.btn-menu{
+	border-radius: 5px;
+	border: 1px solid $d-green;
+	background-color: white;
+	color: $d-green;
+	font-family: $p-font;
+	font-size: 14px;
+	&:hover{background-color: $l-green; color: white; border: 1px solid $l-green;};
+}
+
